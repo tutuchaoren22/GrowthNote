@@ -15,4 +15,10 @@ public class UserRepository {
         }
         return false;
     }
+
+    public List<User> addUserNameAndPassword(String id, String name, String password) {
+        List<User> users = UserData.userLists;
+        users.add(new User(id,name,password));
+        return users;
+    }
 }
